@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Login workflow</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+  <script src='main.js'></script>
+</head>
+
+<body>
+  <div class="container">
+    <button type="button" id="back" class="back-button">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 512 512">
+        <title>ionicons-v5-a</title>
+        <polyline points="328 112 184 256 328 400"
+          style="fill:none;stroke:#000;stroke-linecap:square;stroke-miterlimit:10;stroke-width:48px" />
+      </svg>
+    </button>
+    <section data-page="name" class="active">
+      <h1>Let's get started!</h1>
+      <label for="firstName">Firstname</label>
+      <input type="text" name="firstName" id="firstName">
+      <label for="lastName">Last name</label>
+      <input type="text" name="lastName" id="lastName">
+    </section>
+    <section data-page="email" class="hide">
+      <h1>What is your email addres?</h1>
+      <label for="email">Email</label>
+      <input type="text" name="email" id="email">
+    </section>
+    <section data-page="verification" class="hide">
+      <h1>Enter the verification code</h1>
+      <label for="verificationCode">Verification code</label>
+      <input type="text" name="verificationCode" id="verificationCode">
+    </section>
+    <section data-page="verification2" class="hide">
+      <h1>Verify your email</h1>
+      <label for="verificationCode2">Verification code</label>
+      <input type="text" name="verificationCode2" id="verificationCode2">
+    </section>
+    <section data-page="password" class="hide">
+      <h1>Now set a password</h1>
+      <label for="passowrd">Password</label>
+      <input type="password" name="password" id="password">
+      <label for="confirmPassword">Confirm password</label>
+      <input type="password" name="confirmPassword" id="confirmPassword">
+    </section>
+    <br />
+    <button type="button" id="next" class="continue">
+      <p>Continue</p>
+      <p><svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" fill="currentColor"
+          class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+        </svg></p>
+    </button>
+  </div>
+</body>
+
+</html>
